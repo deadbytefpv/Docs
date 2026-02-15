@@ -46,7 +46,7 @@ To start using MAVLink, you just need one ESP based ELRS transmitter, and one ES
 !!! note "NOTE: Internal TX modules"
     If you are using an internal TX module (e.g. a TX16S with internal ELRS), you will be required to use the TX Backpack to connect to you GCS via WiFi (USB cable between the TX and the PC is not an option for internal modules). See WiFi Connectivity below.
 
-## Flashing and Configuring ELRS for MAVLink
+## Flashing ELRS for MAVLink
 
 Ensure both your transmitter module, the embedded TX-Backpack (if using WiFi forwarding), and your receiver are up to date with the latest release versions:
 
@@ -57,15 +57,19 @@ The minimum versions to use this feature are:
 - Transmitter / receiver firmware: `3.5.0`
 - TX Backpack firmware: `1.5.0`
 
-1. Using the guides above, flash both the RX and TX
+## Configuring ELRS TX & RX for MAVLink
 
-1. Turn on both the RX and TX, and ensure they connect properly
+1. Turn on both the RX and TX, and ensure they are bound, connected, and communicating. In the ELRS Lua script look for a C in the top-right corner of the screen which indicates that the TX module and receiver are connected and communicating.
 
-1. In ELRS LUA script, select `Other Devices`, select your receiver, and set the `serial protocol` to `MAVLink`. This configures the RX to output MAVLink protocol on the UART.
-
-1. Back out to the LUA scripts main menu, and select the `Link Mode` option. Change it from `Normal` to `MAVLink`. This configures the TX module to send / receive MAVLink.
+1. Set the protocol on the RX UART to MAVLink.
+   - For ELRS v3, with the TX and RX still connected, in the ELRS Lua script, select `Other Devices`, select your receiver, and set the `serial protocol` to `MAVLink`.
+   - For ELRS v4, this step can be skipped. RX protocol is now configured automatically when changing the TX mode to MAVLink.
+   
+1. Turn off your receiver, link mode cannot be changed when connected. In the main menu select the `Link Mode` option. Change it from `Normal` to `MAVLink`. This configures the TX module to send / receive MAVLink.
 
 1. Configure your usual power, packet rate, etc. The telemetry ratio will be preset to 1:2 (and cannot be changed while in MAVLink mode).
+
+1. Power on your receiver and verify it is connected and communicating with the transmitter. As above look for the C in the top-right.
 
 1. Wire the RX to a free UART on your flight controller that is suitable for TLM + RC. A DMA-capable UART is recommended.
 
@@ -113,7 +117,7 @@ Once your flight controller and ExpressLRS hardware are configured for MAVLink, 
 
 ELRS converts the MAVLink telemetry into standard CRSF format which is understood by EdgeTX. On the Telemetry page in EdgeTX, click "Discover new" to see GPS, battery stats, flight mode, etc.
 
-Yaapu LUA script does not work with ELRS MAVLink in `v3.x.x` but support is coming in `v4.x.x`.
+Yaapu Lua script does not work with ELRS MAVLink in `v3.x.x` but is supported in `v4.x.x`.
 
 ## Connecting to the Ground Control Station
 
@@ -216,7 +220,7 @@ The Backpack supports two WiFi modes:
 
 1. Ensure the TX Backpack is running version `1.5.0` or later
 
-1. In the ELRS LUA script, select `Backpack`, scroll to the `Telemetry` option, and change the value to `WiFi`
+1. In the ELRS Lua script, select `Backpack`, scroll to the `Telemetry` option, and change the value to `WiFi`
 
     !!! danger "Attention!"
         DO NOT manually put the TX Backpack into WiFi mode via `WiFi Connectivity -> Enable Backpack WiFi`. It's not in the steps above for a reason. 
@@ -324,7 +328,7 @@ ExpressLRS TX modules can be used as standalone telemetry radios, similar to tra
 
 ### How to Use Standalone Mode
 
-1. Before using the TX module standalone, you will need to setup the packet rate, RF power, etc. using a handset and the ELRS LUA script. You can also set the `Link Mode` option to `MAVLink` if you want, although this is not strictly necessary as the TX will detect MAVLink and change this setting automatically.
+1. Before using the TX module standalone, you will need to setup the packet rate, RF power, etc. using a handset and the ELRS Lua script. You can also set the `Link Mode` option to `MAVLink` if you want, although this is not strictly necessary as the TX will detect MAVLink and change this setting automatically.
 
     !!! danger "IMPORTANT!"
         Make sure you are using Model ID 0 in EdgeTX when you do this setup. ELRS uses the settings that are associated with Model ID 0 when no handset is connected.
