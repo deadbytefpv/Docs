@@ -62,8 +62,8 @@ The minimum versions to use this feature are:
 1. Turn on both the RX and TX, and ensure they are bound, connected, and communicating. In the ELRS Lua script look for a C in the top-right corner of the screen which indicates that the TX module and receiver are connected and communicating.
 
 1. Set the protocol on the RX UART to MAVLink.
-   - For ELRS v3, with the TX and RX still connected, in the ELRS Lua script, select `Other Devices`, select your receiver, and set the `serial protocol` to `MAVLink`.
-   - For ELRS v4, this step can be skipped. RX protocol is now configured automatically when changing the TX mode to MAVLink.
+    - For ELRS v3, with the TX and RX still connected, in the ELRS Lua script, select `Other Devices`, select your receiver, and set the `serial protocol` to `MAVLink`.
+    - For ELRS v4, this step can be skipped. RX protocol is now configured automatically when changing the TX mode to MAVLink.
    
 1. Turn off your receiver, link mode cannot be changed when connected. In the main menu select the `Link Mode` option. Change it from `Normal` to `MAVLink`. This configures the TX module to send / receive MAVLink.
 
