@@ -12,25 +12,25 @@ description: To optimize the performance of ExpressLRS, it has different Switch 
 
 This table summarizes the switch configuration modes, available channel switch positions and resolutions, channel update rate, and packet rate as it applies to each channel or flight controller auxiliary channel (Aux). Below the table are descriptions for each option.
 
-| Channel | Flight <br>Controller | Hybrid | Wide | Full Res <br>8ch | Full Res <br>16ch Rate/2 | Full Res <br>12ch Mixed |
+| Channel | Flight <br/>Controller | Hybrid | Wide | Full Res <br/>8ch | Full Res <br/>16ch Rate/2 | Full Res <br/>12ch Mixed |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 1   | Sticks | **Normal<br>Range** | **Normal<br>Range** | **CRSF Ext<br>Limits** | CRSF Ext<br>Limits<sup>H</sup> | **CRSF Ext<br>Limits** |
-| 2   | Sticks | **Normal<br>Range** | **Normal<br>Range** | **CRSF Ext<br>Limits** | CRSF Ext<br>Limits<sup>H</sup> | **CRSF Ext<br>Limits** |
-| 3   | Sticks | **Normal<br>Range** | **Normal<br>Range** | **CRSF Ext<br>Limits** | CRSF Ext<br>Limits<sup>H</sup> | **CRSF Ext<br>Limits** |
-| 4   | Sticks | **Normal<br>Range** | **Normal<br>Range** | **CRSF Ext<br>Limits** | CRSF Ext<br>Limits<sup>H</sup> | **CRSF Ext<br>Limits** |
-| 5 | Aux 1 | **2-pos<br>Arm** | **2-pos<br>Arm** | **CRSF Ext<br>Limits<sup>H</sup><br/>Arm*** | CRSF Ext<br>Limits<sup>H</sup><br/>**Arm*** | CRSF Ext<br>Limits<sup>H</sup><br/>**Arm*** |
-| 6   | Aux 2 | *6-pos*<sup>RR</sup> | *64/128<br>-pos*<sup>RR</sup> | **CRSF Ext<br>Limits** | CRSF Ext<br>Limits<sup>H</sup> | CRSF Ext<br>Limits<sup>H</sup> |
-| 7   | Aux 3 | *6-pos*<sup>RR</sup> | *64/128<br>-pos*<sup>RR</sup> | **CRSF Ext<br>Limits** | CRSF Ext<br>Limits<sup>H</sup> | CRSF Ext<br>Limits<sup>H</sup> |
-| 8   | Aux 4 | *6-pos*<sup>RR</sup> | *64/128<br>-pos*<sup>RR</sup> | **CRSF Ext<br>Limits** | CRSF Ext<br>Limits<sup>H</sup> | CRSF Ext<br>Limits<sup>H</sup> |
-| 9   | Aux 5 | *6-pos*<sup>RR</sup> | *64/128<br>-pos*<sup>RR</sup> | - | CRSF Ext<br>Limits<sup>H</sup> | CRSF Ext<br>Limits<sup>H</sup> |
-| 10  | Aux 6 | *6-pos*<sup>RR</sup> | *64/128<br>-pos*<sup>RR</sup> | - | CRSF Ext<br>Limits<sup>H</sup> | CRSF Ext<br>Limits<sup>H</sup> |
-| 11  | Aux 7 | *6-pos*<sup>RR</sup> | *64/128<br>-pos*<sup>RR</sup> | - | CRSF Ext<br>Limits<sup>H</sup> | CRSF Ext<br>Limits<sup>H</sup> |
-| 12  | Aux 8 | *16-pos*<sup>RR</sup> | *64/128<br>-pos*<sup>RR</sup> | - | CRSF Ext<br>Limits<sup>H</sup> | CRSF Ext<br>Limits<sup>H</sup> |
-| 13  | Aux 9 | - | - | - | CRSF Ext<br>Limits<sup>H</sup> | - |
-| 14  | Aux 10 | **2-pos<br>Arm*** | **2-pos<br>Arm*** | **2-pos<br>Arm*** | CRSF Ext<br>Limits<sup>H</sup> | **2-pos<br>Arm*** |
-| 15  | Aux 11 | - | - | - | CRSF Ext<br>Limits<sup>H</sup> | - |
-| 16  | Aux 12 | - | - | - | CRSF Ext<br>Limits<sup>H</sup> | - |
-|  | Packet <br>Rates | 50 thru <br>F1000 | 50 thru <br>F1000 | Full Res <br>Only | Full Res <br>Only | Full Res <br>Only |
+| 1   | Sticks | **Normal<br/>Range** | **Normal<br/>Range** | **CRSF Ext<br/>Limits** | CRSF Ext<br/>Limits<sup>H</sup> | **CRSF Ext<br/>Limits** |
+| 2   | Sticks | **Normal<br/>Range** | **Normal<br/>Range** | **CRSF Ext<br/>Limits** | CRSF Ext<br/>Limits<sup>H</sup> | **CRSF Ext<br/>Limits** |
+| 3   | Sticks | **Normal<br/>Range** | **Normal<br/>Range** | **CRSF Ext<br/>Limits** | CRSF Ext<br/>Limits<sup>H</sup> | **CRSF Ext<br/>Limits** |
+| 4   | Sticks | **Normal<br/>Range** | **Normal<br/>Range** | **CRSF Ext<br/>Limits** | CRSF Ext<br/>Limits<sup>H</sup> | **CRSF Ext<br/>Limits** |
+| 5 | Aux 1 | **2-pos<br/>Arm** | **2-pos<br/>Arm** | **CRSF Ext<br/>Limits<br/>Arm*** | CRSF Ext<br/>Limits<sup>H</sup><br/>**Arm*** | CRSF Ext<br/>Limits<sup>H</sup><br/>**Arm*** |
+| 6   | Aux 2 | *6-pos*<sup>RR</sup> | *64/128<br/>-pos*<sup>RR</sup> | **CRSF Ext<br/>Limits** | CRSF Ext<br/>Limits<sup>H</sup> | CRSF Ext<br/>Limits<sup>H</sup> |
+| 7   | Aux 3 | *6-pos*<sup>RR</sup> | *64/128<br/>-pos*<sup>RR</sup> | **CRSF Ext<br/>Limits** | CRSF Ext<br/>Limits<sup>H</sup> | CRSF Ext<br/>Limits<sup>H</sup> |
+| 8   | Aux 4 | *6-pos*<sup>RR</sup> | *64/128<br/>-pos*<sup>RR</sup> | **CRSF Ext<br/>Limits** | CRSF Ext<br/>Limits<sup>H</sup> | CRSF Ext<br/>Limits<sup>H</sup> |
+| 9   | Aux 5 | *6-pos*<sup>RR</sup> | *64/128<br/>-pos*<sup>RR</sup> | - | CRSF Ext<br/>Limits<sup>H</sup> | CRSF Ext<br/>Limits<sup>H</sup> |
+| 10  | Aux 6 | *6-pos*<sup>RR</sup> | *64/128<br/>-pos*<sup>RR</sup> | - | CRSF Ext<br/>Limits<sup>H</sup> | CRSF Ext<br/>Limits<sup>H</sup> |
+| 11  | Aux 7 | *6-pos*<sup>RR</sup> | *64/128<br/>-pos*<sup>RR</sup> | - | CRSF Ext<br/>Limits<sup>H</sup> | CRSF Ext<br/>Limits<sup>H</sup> |
+| 12  | Aux 8 | *16-pos*<sup>RR</sup> | *64/128<br/>-pos*<sup>RR</sup> | - | CRSF Ext<br/>Limits<sup>H</sup> | CRSF Ext<br/>Limits<sup>H</sup> |
+| 13  | Aux 9 | - | - | - | CRSF Ext<br/>Limits<sup>H</sup> | - |
+| 14  | Aux 10 | **2-pos<br/>Arm*** | **2-pos<br/>Arm*** | **2-pos<br/>Arm*** | CRSF Ext<br/>Limits<sup>H</sup> | **2-pos<br/>Arm*** |
+| 15  | Aux 11 | - | - | - | CRSF Ext<br/>Limits<sup>H</sup> | - |
+| 16  | Aux 12 | - | - | - | CRSF Ext<br/>Limits<sup>H</sup> | - |
+|  | Packet <br/>Rates | 50 thru <br/>F1000 | 50 thru <br/>F1000 | Full Res <br/>Only | Full Res <br/>Only | Full Res <br/>Only |
 
 <small>* v4.0 changes, with the introduction of the new arming methods</small>
  
@@ -59,10 +59,10 @@ This table summarizes the switch configuration modes, available channel switch p
 | Label | Description |
 |:---:| --- |
 | **Bolded** | This channel will be included in every packet at the selected packet rate (So a 150Hz Packet Rate = 150Hz Channel Update Rate) |
-| H <br> Half Rate | Half of the channels are included in each packet - Rate/2 (So a 100Hz Packet Rate cut in half = 50Hz Channel Update Rate) |
-| RR <br> Round Robin | These channels wait their turn to be sent in a packet (So a 150Hz Packet Rate sends a channel every 7th packet = 22Hz Channel Update Rate) |
-| 50 thru<br>F1000 | The **Hybrid** and **Wide** switch modes are only available on packet rates of 50Hz, 150Hz, 250Hz, 500Hz, D250Hz, D500Hz, F500Hz, and F1000Hz |
-| 100&333<br>Only | The **Full Resolution** switch modes (**8ch**, **16ch Rate/2**, **12ch Mixed**) are only available on packet rates of 100Hz Full and 333Hz Full |
+| H <br/> Half Rate | Half of the channels are included in each packet - Rate/2 (So a 100Hz Packet Rate cut in half = 50Hz Channel Update Rate) |
+| RR <br/> Round Robin | These channels wait their turn to be sent in a packet (So a 150Hz Packet Rate sends a channel every 7th packet = 22Hz Channel Update Rate) |
+| 50 thru<br/>F1000 | The **Hybrid** and **Wide** switch modes are only available on packet rates of 50Hz, 150Hz, 250Hz, 500Hz, D250Hz, D500Hz, F500Hz, and F1000Hz |
+| 100&333<br/>Only | The **Full Resolution** switch modes (**8ch**, **16ch Rate/2**, **12ch Mixed**) are only available on packet rates of 100Hz Full and 333Hz Full |
  
 ## Detailed Description of Switch Configuration Modes
 
@@ -87,7 +87,7 @@ For the remaining 7 switches (Chan 6 thru 12 /  AUX 2 thru AUX 8), only one swit
 
 In **Hybrid** mode, AUX2-AUX7 / Chan6-11 are 3-bit and can be used as either 2-position, 3-position, or 6-position switches or selector buttons. These are mapped to a PWM of 1000us to 2000us.
 
-|2-pos<br>Switch |3-pos<br>Switch |6-pos<br>Switch | Approx. Channel<br>Input PWM (us) | Channel<br>Output (us) | ArduPilot Mode
+|2-pos<br/>Switch |3-pos<br/>Switch |6-pos<br/>Switch | Approx. Channel<br/>Input PWM (us) | Channel<br/>Output (us) | ArduPilot Mode
 |:--: | :--: | :--: | :--: | :--: | --
 |1|1|1|988 | 1000 | Mode1 (up position for 2-pos / 3-pos)
 |||2|1192 | 1275 | Mode2
