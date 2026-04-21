@@ -64,7 +64,9 @@ Yes, there is antenna switching.
 
 ## What happens if I use a Gemini TX, in Gemini Mode, with a single Antenna Receiver?
 
-The Gemini TX will function as designed, in Gemini Mode. The Receiver will only get the signal from the TX it has synchronized with. The other TX, will act as a noise generator. Therefore, you should set the TX in either Switch or Single Antenna (Ant1/Ant2) Mode.
+The Gemini TX will function as designed, in Gemini Mode. The Receiver will only get the signal from the TX it has synchronized with. The other TX will still transmit uselessly in the other frequency.
+
+In ExpressLRS 4.0, this is automatically managed by the TX module, changing the mode depending on the Receiver in sync.
 
 ## What happens if I use a Gemini TX, in Gemini Mode, with Gemini-incapable Diversity Receivers?
 
