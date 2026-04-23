@@ -348,6 +348,7 @@ brushless
 btn
 bugfixes
 callout
+chipset
 commanderguy
 comms
 config
