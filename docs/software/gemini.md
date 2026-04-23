@@ -9,11 +9,11 @@ description: ExpressLRS Gemini is a Dual Channel 2.4GHz and/or 900MHz System.
 
 Gemini is a dual channel 2.4GHz and/or 900MHz (and potentially other low-band frequencies) transmission mode that leverages true diversity hardware to maximize LQ.
 
-There's single-band Gemini; which uses diversity hardware to transmit in multiple channels within the same band (2.4GHz or 900MHz) and there's also Gemini Xrossband (Crossband; i.e. dual-band) which is capable of transmitting on both 2.4GHz and 900MHz bands simultaneously using two LR1121 tranceivers.
+There's single-band Gemini; which uses diversity hardware to transmit in multiple channels within the same band (2.4GHz or 900MHz) and there's also Gemini Xrossband (Crossband; i.e. dual-band) which is capable of transmitting on both 2.4GHz and 900MHz bands simultaneously using two LR1121 transceivers.
 
 In single-band Gemini Mode, a TX module simultaneously transmits a packet in two frequencies 40MHz apart for 2.4GHz and ~10MHz apart for 900MHz users. The packet separation used is half of the frequency domain selected and will vary a little.
 
-In dual-band GemX Mode (e.g. X150 or X100 Full Res), a TX module transmits a packet in SubG (900MHz) via Antenna 1 and in 2.4GHz via Antenna 2. 
+In dual-band GemX Mode (e.g. X150 or X100 Full Res), a TX module transmits a packet in SubGHz (900MHz) via Antenna 1 and in 2.4GHz via Antenna 2. 
 
 A true diversity Receiver is used to receive both packets simultaneously.
 
@@ -68,7 +68,7 @@ No. The packet sensitivity remains the same for the RF Mode (or Packet Rate) use
 
 ## Gemini Xrossband
 
-Gemini Xrossband or GemX is capable of transmitting on both 2.4GHz and 900MHz bands simultaneously. It is available to ExpressLRS devices with 2 LR1121 RF chipsets. In X-modes (X100 Full Res or X150), one rf circuit (typically designated as Antenna 1) operates in SubG (mainly 900MHz) and the other (typically designated as Antenna 2) operates in 2.4GHz. In X-modes, Antenna Mode option will be locked to `Gemini` since you need both RF paths to be working simultaneously. 
+Gemini Xrossband or GemX is capable of transmitting on both 2.4GHz and 900MHz bands simultaneously. It is available to ExpressLRS devices with 2 LR1121 RF chipsets. In X-modes (X100 Full Res or X150), one RF circuit (typically designated as Antenna 1) operates in SubGHz (mainly 900MHz) and the other (typically designated as Antenna 2) operates in 2.4GHz. In X-modes, Antenna Mode option will be locked to `Gemini` since you need both RF paths to be working simultaneously. 
 
 A GemX-capable receiver will be required for this mode, and any single-band receiver will not get a sync.
 
