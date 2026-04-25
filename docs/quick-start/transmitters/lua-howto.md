@@ -219,7 +219,10 @@ Available Options:
 
     The reason is that as the receiver only get the signal from the TX it has synchronized with, the other TX will emit signals uselessly in the other frequency and increase both the noise floor and power consumption.
 
-    X-Band or X modes will now lock this to Gemini or if it detects the Receiver isn't capable of Gemini Mode, it will be set to `Switch` starting with ExpressLRS 4.0.
+    Starting with ExpressLRS 4.0:
+    
+    - X-Band or X Modes (X150 or X100 Full Res) will lock this to `Gemini`, since both RF paths will be in use in these modes.
+    - If a bound/connected/in-sync receiver isn't capable of Gemini mode (Single Antenna or Antenna-Diversity receivers), Antenna Mode will be set to `Switch`.
 
 ### Link Mode
 
