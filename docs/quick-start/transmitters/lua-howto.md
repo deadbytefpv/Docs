@@ -216,7 +216,9 @@ Available Options:
 
 !!! warning "WARNING"
 	When using a Gemini TX with a non-Gemini receiver, you should set the TX in either Switch or Single Antenna (Ant1/Ant2) Mode.
+
     The reason is that as the receiver only get the signal from the TX it has synchronized with, the other TX will emit signals uselessly in the other frequency and increase both the noise floor and power consumption.
+    
     X-Band or X modes will now lock this to Gemini or if it detects the Receiver isn't capable of Gemini Mode, it will be set to `Switch` starting with ExpressLRS 4.0.
 
 ### Link Mode
